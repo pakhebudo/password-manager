@@ -3,6 +3,9 @@ from encryption_decryption import enc
 from encryption_decryption import dec
 import os
 
+def view(id):
+    print('nigger')
+
 def operation_to_perform(id):
     os.system('cls')
     print(f"Hi {id}!")
@@ -13,9 +16,23 @@ def operation_to_perform(id):
     print(" 4. Delete an existing id & password.")
     print(" 5. Nothing... Just passing by.....")
 
-    number = input("\nEnter the service number mentioned above: ")
-    print(number)
+    number = input("\nSelect the appropriate number for the service you want: ")
+    
+    if (number == 1):
+        view(id)
 
+    elif (number == 2):
+        add(id)
+
+    elif (number == 3):
+        update(id)
+
+    elif (number == 4):
+        delete(id)
+
+    elif (number == 5):
+        print("Noice... Urmmm...... Have a good day... i guess")
+ 
 os.system('cls')
 
 login_file = Path("C:/Users/prabe/Desktop/study material/code/python/projects/build/password manager/1.txt")

@@ -1,8 +1,14 @@
-from encryption_decryption import enc
-from encryption_decryption import dec
+from pathlib import Path
+import json
+from encryption_decryption import *
 
-print(enc("Puspa Thapa Godar Khatri", 17))
-print(enc("prabesh111@", 17))
+path = Path("C:/Users/prabe/Desktop/study material/code/python/projects/build/password manager/1.txt")
 
-print(dec("Gljgr Kyrgr Xfuri Byrkiz", 17))
-print(dec("girsvjy111@", 17))
+nigger = dec(path.read_text(), 17)
+
+print(nigger)
+
+
+
+
+

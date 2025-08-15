@@ -6,7 +6,7 @@ path = Path("C:/Users/prabe/Desktop/study material/code/python/projects/build/pa
 
 nigger = dec(path.read_text(), 17)
 
-print(nigger)
+
 
 
 
